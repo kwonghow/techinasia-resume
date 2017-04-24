@@ -1,0 +1,298 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  
+  background: #fafafa;
+  color: #333;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 46px solid transparent;
+  border-right: 46px solid transparent;
+  margin: 0 auto;
+  border-top: 27px solid #fafafa;
+}
+
+.zbox  {
+  border-radius: 0;
+  border: 1px solid #ddd;
+  box-shadow: none;
+}
+
+a { color: #c01820; }
+
+a:active,
+a:hover,
+a:focus { 
+  color: #d62028;
+  text-decoration: none;
+}
+
+.tech-in-asia-heading {
+  position: relative;
+  
+  overflow: hidden;
+  
+  color: #555;
+  font-size: 2.3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .tech-in-asia-heading::after {
+    position: absolute;
+    top: 50%;
+    
+    width: 99%;
+    margin-left: 5px;
+    border-top: 2px solid #c01820;
+    
+    content: "";
+  }
+}
+
+
+
+
+/* ----- ANNOUNCEMENT BAR ----- */
+.announcement-bar {
+  display: table;
+  width: 100%;
+  margin: 4vh 0 2vh;
+  
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.announcement-bar__left {
+  display: table-cell;
+  width: 1px;
+  padding: 15px;
+  
+  font-weight: 800;
+  text-transform: uppercase;
+  
+  background: #c01820;
+}
+
+.announcement-bar__right {
+  display: table-cell;
+  padding: 15px;
+  
+  background: #333;
+}
+
+
+
+
+/* ----- ABOUT ME ----- */
+.about-me__profile-image {
+  max-width: 100%;
+}
+
+.about-me__text-section .row {
+  margin-bottom: 5px;
+}
+
+.about-me__text-section .col-sm-6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .about-me__text-section .col-sm-6{
+    margin-top: 0;
+  }
+}
+
+.about-me__name {
+  margin: 0;
+  
+  font-size: 1.9rem;
+}
+
+@media (min-width: 768px) {
+  .about-me__social-icons {
+    text-align: right;
+  }
+}
+
+.fa-envelope {
+  position: relative;
+  top: -1px;
+}
+
+.color-envelope { color: #00a040; }
+.color-envelope:hover, .color-envelope:focus { color: #00d354; }
+
+.color-twitter { color: #00aced; }
+.color-twitter:hover, .color-twitter:focus { color: #21c2ff; }
+
+.color-linkedin { color: #007bb5; }
+.color-linkedin:hover, .color-linkedin:focus { color: #009ee8; }
+
+
+
+
+/* ----- SECTIONS GLOBAL SETTINGS ----- */
+.section__banner {
+  margin-top: 8vh;
+  margin-bottom: 4vh;
+  height: 75vh;
+  
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section__heading {
+  position: relative;
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  
+  color: #fff;
+  font-size: 5.0625rem;
+  font-family: "Open Sans", sans-serif;
+  text-shadow: 2px 2px 2px rgba(0,0,0, 0.6);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section__subheading {
+  font-size: 2.0rem;
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+}
+
+.zbox .help-block {
+  font-size: 1.3333rem;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 15px;
+}
+
+.zbox > .panel-body {
+  font-family: "Merriweather", serif;
+}
+
+@media (min-width: 768px) {
+  .zflex { display: flex; }
+}
+
+
+
+
+/* ----- WHY TECH IN ASIA ----- */
+.section__banner--why-tech-in-asia { background-image: linear-gradient(to bottom, rgba(0,0,0,.4) 0%, rgba(0,0,0,.4) 100%), url('section-background--1.jpg'); }
+
+.why-tech-in-asia .fa {
+  font-size: 3.375rem;
+  color: #c01820;
+}
+
+@media (min-width: 768px) {
+  .why-tech-in-asia .fa { font-size: 5.0625rem; }
+}
+
+@media (min-width: 1025px) {
+  .why-tech-in-asia .fa { font-size: 7.5938rem; }
+}
+
+.why-tech-in-asia__techinasia-logo {
+  max-height: 2.667rem;
+  margin: .3667rem 0;
+}
+@media (min-width: 768px) {
+  .why-tech-in-asia__techinasia-logo {
+    max-height: 4rem;
+    margin: .55rem 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .why-tech-in-asia__techinasia-logo {
+    max-height: none;
+    margin: .8rem 0;
+  }
+}
+
+
+
+
+/* ----- WHAT I DO ----- */
+.section__banner--what-i-do { background-image: linear-gradient(to bottom, rgba(0,0,0,.4) 10vh, transparent 75%), url('section-background--2.jpg'); }
+
+.what-i-do__intro { margin: 4vh; }
+
+.what-i-do__upgrades-link {
+  font-size: 1.5rem;
+  line-height: 3;
+}
+
+.what-i-do__upgrades-title { margin-top: 0; }
+
+.what-i-do .fa {
+  font-size: 2.25rem;
+  color: #007f00;
+}
+
+@media (min-width: 768px) {
+  .what-i-do .fa { font-size: 3.375rem; }
+}
+
+@media (min-width: 1025px) {
+  .what-i-do .fa { font-size: 5.0625rem; }
+}
+
+
+
+
+/* ----- WHAT I CAN OFFER ----- */
+.section__banner--what-i-can-offer { background-image: linear-gradient(to bottom, rgba(0,0,0,.4) 10vh, transparent 75%), url('section-background--3.jpg'); }
+
+.what-i-can-offer__th--10 { width: 15%; }
+.what-i-can-offer__th--10 a { border-bottom: 1px #c01820 dashed; }
+
+.what-i-can-offer .fa-camera {
+  font-size: 2.25rem;
+  color: #c01820;
+}
+
+@media (min-width: 768px) {
+  .what-i-can-offer .fa-camera { font-size: 3.375rem; }
+}
+
+@media (min-width: 1025px) {
+  .what-i-can-offer .fa-camera { font-size: 5.0625rem; }
+}
+
+
+
+
+/* ----- WHY I LOVE TECH IN ASIA ----- */
+.section__banner--why-i-belong-at-tech-in-asia { background-image: linear-gradient(to bottom, rgba(0,0,0,.4) 10vh, transparent 75%), url('section-background--4.jpg'); }
+
+.why-i-belong-at-tech-in-asia .fa {
+  font-size: 2.25rem;
+  color: #c01820;
+}
+
+@media (min-width: 768px) {
+  .why-i-belong-at-tech-in-asia .fa { font-size: 3.375rem; }
+}
+
+@media (min-width: 1025px) {
+  .why-i-belong-at-tech-in-asia .fa { font-size: 5.0625rem; }
+}
+
+
+
+
+/* ----- CONTACT ME ----- */
+.section__banner--thank-you { background-image: linear-gradient(to bottom, rgba(0,0,0,.4) 10vh, transparent 75%), url('section-background--5.jpg'); }
+
+.thank-you__send-mail-btn { margin-top: 2vh; }
+.thank-you__back-to-top-btn { margin-bottom: 4vh; }
